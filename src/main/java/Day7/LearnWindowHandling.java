@@ -49,6 +49,6 @@ public class LearnWindowHandling {
         }
 
         System.out.println(twitterPage.url());
-
+        playwright.close();
     }
 }
