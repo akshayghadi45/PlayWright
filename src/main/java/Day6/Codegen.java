@@ -34,5 +34,7 @@ public class Codegen {
         Locator logoutSuccess = page.getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("Account Logout"));
         assertThat(logoutSuccess).isVisible();
         playwright.close();
+
+        //mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen https://www.lambdatest.com/selenium-playground/simple-form-demo"
     }
 }
